@@ -20,11 +20,11 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
 
-      - name: Build and push
+      - name: Build and push 2
         id: docker_build
         uses: docker/build-push-action@v2
         with:
           push: false
-          tags: odirleyrp/git-ci:latest
+          tags: odirleyrp/git-ci2:latest
 
     
