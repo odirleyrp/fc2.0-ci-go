@@ -1,3 +1,10 @@
-FROM ubuntu:latest
+#FROM golang:latest
+FROM golang:1.15
+WORKDIR /app
 
-CMD [ "echo", "Hello Word!.... Teste CI !!!!"  ]
+
+COPY . .
+
+RUN go build -o math
+
+CMD ["./math"]
